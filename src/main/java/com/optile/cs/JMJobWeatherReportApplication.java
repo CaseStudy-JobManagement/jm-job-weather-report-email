@@ -18,6 +18,6 @@ public class JMJobWeatherReportApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		job.execute("1");
+		job.execute(args[0], args);
 	}
 }

@@ -1,0 +1,22 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: anant.c.pawar@gmail.com
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+      thymeleaf:
+        cache: false
+        prefix: classpath:/templates
+app:
+  weather:
+    url: "http://api.openweathermap.org/data/2.5/weather"
+    appId: ${WEATHER_APP_KEY}
